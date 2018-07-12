@@ -89,6 +89,7 @@ class SingleOtpInput extends PureComponent<*> {
             hasErrored && isStyleObject(errorStyle) && errorStyle
           )}
           className={this.getClasses(
+            !isStyleObject(inputStyle) && inputStyle,
             focus && focusStyle,
             isDisabled && disabledStyle,
             hasErrored && errorStyle
